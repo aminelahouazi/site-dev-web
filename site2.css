@@ -1,6 +1,11 @@
 ﻿body
 {background-color: lightyellow;
 } 
+html,body{
+width:100%;
+overflow-x: hidden;
+	margin: 0;
+} 
 .titre{
   font-size: 50px;
  
@@ -51,31 +56,71 @@ h2,p,h3{
 
 
 
-.left{
+#left{
+	
 	animation-name: fadeup;
 	animation-duration:3s;
-	 height:500px;
-
+	height:500px;
+	
 	text-align: center;
 	vertical-align: top;	
 }
-.middle{
-	animation-name: fadeup;
-	animation-duration:1.2s;
+#middle{
 	 height:500px;
 	
 
 	text-align: center;
 	vertical-align: top;
 }
-.right{
-	animation-name: fadeup;
-	animation-duration:3.5s;
-	 height:500px;
+#right{
 	
+ height:500px;
+ text-align: center;
+ vertical-align: top;
+}
 
-	text-align: center;
-	vertical-align: top;
+.getm
+{  transition-delay:1s;
+	transition-property:transform;
+ transform: translateX(-100%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
+}
+.outm
+{  
+	transition-property:transform;
+ transform: translateX(0%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
+}
+.outl
+{
+	transition-property:transform;
+ transform: translateX(+100%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
+}
+.outr
+{  
+	transition-property:transform;
+ transform: translateX(0%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
+}
+
+.getl
+{ transition-delay:1s;
+	transition-property:transform;
+ transform: translateX(0%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
+}
+.getr
+{  transition-delay:1s;
+	transition-property:transform;
+ transform: translateX(-200%);
+ transition-duration: 1s;
+ transition-timing-function: ease;
 }
 
 
@@ -97,49 +142,51 @@ a:link, a:visited {
 
 
 a:hover, a:active{
-	
-	 transition-property:transform;
-	    transform: translateY(-50%);
-  transition-duration: 200ms;
-  transition-timing-function: ease;
- 
- background-color: black;
+
+ transition-property:transform;
+ transform: translateY(-50%);
+ transition-duration: 200ms;
+ transition-timing-function: ease;
+  background-color: black;
   color: white;
 }
 
 .left2{
 	animation-name: fadeIn;
 	animation-duration:3.5s;
-	 height:100px;
+
 	text-align: center;
 	vertical-align: middle;
-	
-
 }
 .middle2{
 	animation-name: fadeIn;
 	animation-duration:2.5s;
-	height:100px;
-	text-align: center;
-	vertical-align: middle;
 	
+	text-align: center;
+	vertical-align: middle;	
 }
 .right2{
 	animation-name: fadeIn;
 	animation-duration:1.5s;
-	 height:100px;
+
 	text-align: center;
 	vertical-align: middle;
 }
 
 
-
-table,td {
-
-  margin: auto;
+td
+{
+ padding: 25px;
 }
 
-table{
+.table1{
+	margin: auto;
 	width: 70%;
 	 border-collapse: collapse;
 }
+.table2{
+	width:300%;
+	 border-collapse: collapse;
+}
+ 
+
