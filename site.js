@@ -1,5 +1,4 @@
 // JavaScript source code
-// JavaScript source code
 let left = true;
 let middle = false;
 let right = false;

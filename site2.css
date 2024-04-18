@@ -1,10 +1,11 @@
-﻿body
-{background-color: lightyellow;
-} 
-html,body{
+﻿
+body{
+background-color: lightyellow;
 width:100%;
+height:1200px;
 overflow-x: hidden;
-	margin: 0;
+overflow-y: auto;
+	
 } 
 .titre{
   font-size: 50px;
@@ -13,7 +14,7 @@ animation-name: fadeIn;
 animation-duration:3s;
   font-family: fantasy;
   margin: auto;
-  text-align: center;
+  text-align:left;
   width: 50%;
   padding: 25px;
 }
@@ -59,7 +60,8 @@ h2,p,h3{
 #left{
 	
 	animation-name: fadeup;
-	animation-duration:3s;
+	animation-duration:2s;
+	animation-timing-function: ease;
 	height:500px;
 	
 	text-align: center;
@@ -82,7 +84,7 @@ h2,p,h3{
 .getm
 {  transition-delay:1s;
 	transition-property:transform;
- transform: translateX(-100%);
+ transform: translateX(-99%);
  transition-duration: 1s;
  transition-timing-function: ease;
 }
@@ -118,7 +120,7 @@ h2,p,h3{
 .getr
 {  transition-delay:1s;
 	transition-property:transform;
- transform: translateX(-200%);
+ transform: translateX(-198%);
  transition-duration: 1s;
  transition-timing-function: ease;
 }
