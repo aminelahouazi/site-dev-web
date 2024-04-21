@@ -2,22 +2,11 @@
 body{
 background-color: lightyellow;
 width:100%;
-height:1200px;
+height:1000px;
 overflow-x: hidden;
 overflow-y: auto;
 	
 } 
-.titre{
-  font-size: 50px;
- 
-animation-name: fadeIn;
-animation-duration:3s;
-  font-family: fantasy;
-  margin: auto;
-  text-align:left;
-  width: 50%;
-  padding: 25px;
-}
 @keyframes fadeIn {
   from {
     transform: translateX(-500px);
@@ -65,68 +54,71 @@ h2,p,h3{
 	height:500px;
 	
 	text-align: center;
-	vertical-align: top;	
+	
 }
 #middle{
 	 height:500px;
 	
 
 	text-align: center;
-	vertical-align: top;
+
 }
 #right{
 	
  height:500px;
  text-align: center;
- vertical-align: top;
+ 
 }
 
 .getm
-{  transition-delay:1s;
+{	
+	transition-delay:1s;
 	transition-property:transform;
- transform: translateX(-99%);
- transition-duration: 1s;
- transition-timing-function: ease;
+    transform: translateX(-99%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 .outm
 {  
 	transition-property:transform;
- transform: translateX(0%);
- transition-duration: 1s;
- transition-timing-function: ease;
+	transform: translateX(0%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 .outl
 {
 	transition-property:transform;
- transform: translateX(+100%);
- transition-duration: 1s;
- transition-timing-function: ease;
+	transform: translateX(+100%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 .outr
 {  
 	transition-property:transform;
- transform: translateX(0%);
- transition-duration: 1s;
- transition-timing-function: ease;
+	transform: translateX(0%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 
 .getl
-{ transition-delay:1s;
+{	
+	transition-delay:1s;
 	transition-property:transform;
- transform: translateX(0%);
- transition-duration: 1s;
- transition-timing-function: ease;
+	transform: translateX(0%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 .getr
-{  transition-delay:1s;
+{  
+	transition-delay:1s;
 	transition-property:transform;
- transform: translateX(-198%);
- transition-duration: 1s;
- transition-timing-function: ease;
+	transform: translateX(-198%);
+	transition-duration: 1s;
+	transition-timing-function: ease;
 }
 
 
-a:link, a:visited {
+/*a:link, a:visited {
  
   transition-property:transform;
   transform: translateY(0%);
@@ -151,7 +143,7 @@ a:hover, a:active{
  transition-timing-function: ease;
   background-color: black;
   color: white;
-}
+}*/
 
 .left2{
 	animation-name: fadeIn;
@@ -176,9 +168,13 @@ a:hover, a:active{
 }
 
 
-td
+.table1 td
 {
  padding: 25px;
+}
+.table2 td
+{
+ padding: 5px 150px;
 }
 
 .table1{
@@ -192,3 +188,99 @@ td
 }
  
 
+.topnav {
+	position: fixed;
+  top: 0;
+  width: 100%;
+	margin-left:-8px;
+	
+  background-image: url("backimg.jpg");
+  overflow: hidden;
+}
+.subnav {
+	position: fixed;
+  top: 40px;
+  width: 100%;
+	margin-left:-8px;
+	
+  background-color: #333;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.lien{
+   font-size: 20px;
+  font-family: fantasy;
+  text-align: right;
+   margin: auto;
+}
+
+/* === removing default button style ===*/
+.button {
+  
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+	margin:10px 10px;
+  --border-right: 3px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #ffff99;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+.actual-text
+{
+	color:rgba(255, 255, 26,0.6);
+
+}

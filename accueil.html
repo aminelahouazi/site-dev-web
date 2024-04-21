@@ -7,44 +7,25 @@
     <title></title>
 </head>
 <body>
-
 <script src="site.js"></script>
-
-
-
-<h1 class="titre">Nom du Restaurant</h1>
-<hr></hr>
-
-   
-<table class="table1">
-<tr>
-<td class="left2">
-<a href="menu.html"><h2>menu</h2></a><br></br>
-
-</td>
-<td class="middle2">
- <a href="accueil.html"><h2>accueil</h2></a><br></br>
-
-</td>
-<td class="right2">
-  <a href="contact.html"><h2>contact</h2></a><br></br>
-  
-</td>
-
-</tr>
-
-</table>
-
-<hr></hr>
-
-
-    <a onclick="getAp()">À propos</a>
-    <a onclick="getSpec()">Spécialités</a>
-    <a onclick="getEvnmt()">Évènements</a>
-
-<br></br>
-<br></br>
-
+<nav class="topnav">
+<button class="button" data-text="Awesome">
+    <span class="actual-text">Nom&nbsp;du&nbsp;Restaurant</span>
+    <span aria-hidden="true" class="hover-text">Nom&nbsp;du&nbsp;Restaurant</span>
+</button>
+<a class ="lien" href="menu.html">menu</a>
+ <a class ="lien" href="accueil.html">accueil</a>
+  <a class ="lien" href="contact.html">contact</a>
+ 
+ </nav>
+ <br></br>
+ <br></br>
+ <br></br>
+<nav>
+    <button onclick="getAp()">À propos</button>
+    <button onclick="getSpec()">Spécialités</button>
+    <button onclick="getEvnmt()">Évènements</button>
+ </nav>
 
 
 <table class="table2">
