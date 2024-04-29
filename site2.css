@@ -1,36 +1,50 @@
 ﻿
 body{
-background-color: lightyellow;
+background-color: white;
+width:fit-content;
+height:1000px;
+overflow-x: hidden;
+  overflow-y: scroll;
+	
+} 
+.bmenu{
+background-color: black;
 width:100%;
 height:1000px;
 overflow-x: hidden;
-overflow-y: auto;
+  overflow-y: scroll;
+	background-image:url("fond_menu.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	
+
+
 } 
-@keyframes fadeIn {
-  from {
-    transform: translateX(-500px);
-  }
-  to {
-    transform: translateX(0px);
-  }
+html
+{
+
+  scrollbar-color:  #939554 #262620 ;
+  
 }
-@keyframes fadeup {
-  from {
-    transform: translateY(500px);
-  }
-  to {
-    transform: translateY(0px);
-  }
+.button {
+  
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
-@keyframes hovered {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-10px);
-  }
+.vert{
+	
+	display: flex;
+  top: 125px;
+  width: 100%;
+	margin-left:-8px;
+	 opacity:75%;
+  background-color: black;
+  overflow: hidden;
 }
+
 .menu{
   font-size: 30px;
   margin: auto;
@@ -38,33 +52,48 @@ overflow-y: auto;
   width: 50%;
   padding: 25px;
 }
-h2,p,h3{
+h2{
   text-align: center;
- margin: auto;
+  font-style: italic;
+  color:white;
+  font-size: 30px;
 }
 
+li{
+	font-size:20px;
+	text-align:justify;
+	color:white;
 
-
-
+}
+ul{
+	
+	text-align:center;
+}
+#pr{
+	margin-left:250px
+}
+#sp{
+	margin-left:180px
+}
+#ev{
+	margin-left:15px
+}
 #left{
 	
-	animation-name: fadeup;
-	animation-duration:2s;
-	animation-timing-function: ease;
-	height:500px;
-	
+   
+
 	text-align: center;
 	
 }
 #middle{
 	 height:500px;
-	
+	margin-left:200px;
 
 	text-align: center;
 
 }
 #right{
-	
+	margin-left:150px;
  height:500px;
  text-align: center;
  
@@ -118,33 +147,6 @@ h2,p,h3{
 }
 
 
-/*a:link, a:visited {
- 
-  transition-property:transform;
-  transform: translateY(0%);
-   transition-duration: 200ms;
-  transition-timing-function: ease;
-
-  background-color: white;
-  color: black;
- 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-
-}
-
-
-a:hover, a:active{
-
- transition-property:transform;
- transform: translateY(-50%);
- transition-duration: 200ms;
- transition-timing-function: ease;
-  background-color: black;
-  color: white;
-}*/
-
 .left2{
 	animation-name: fadeIn;
 	animation-duration:3.5s;
@@ -174,94 +176,71 @@ a:hover, a:active{
 }
 .table2 td
 {
- padding: 5px 150px;
+	 text-align:center;
+ width:1000px;
 }
 
 .table1{
 	margin: auto;
 	width: 70%;
-	 border-collapse: collapse;
+	
 }
 .table2{
+	border-color:white;
+	border-width:50px;
 	width:300%;
-	 border-collapse: collapse;
+	 
 }
  
 
 .topnav {
-	position: fixed;
+	
+	display: flex;
   top: 0;
   width: 100%;
+  margin-top:-8px;
 	margin-left:-8px;
-	
-  background-image: url("backimg.jpg");
+	opacity:75%;
+  background-color: black;
   overflow: hidden;
 }
-.subnav {
-	position: fixed;
-  top: 40px;
-  width: 100%;
-	margin-left:-8px;
+.topnav button{
 	
-  background-color: #333;
+	 text-align:center;
+}
+.subnav {
+	margin-left:-8px;
+  top: 77px;
+  opacity:75%;
+  width: 100%;
+	display: flex;
+	  background-color: black;
+ 
   
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: left;
-  padding: 14px 26px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.lien{
-   font-size: 20px;
-  font-family: fantasy;
-  text-align: right;
-   margin: auto;
-}
-
-/* === removing default button style ===*/
-.button {
+.subnav a {
+  margin:15px 200px;
   
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
-  cursor: pointer;
+  text-align:center;
 }
 
-/* button styling */
 .button {
-	margin:10px 10px;
-  --border-right: 3px;
+	
+	margin:25px 450px;
+  left:-42px;
   --text-stroke-color: rgba(255,255,255,0.6);
   --animation-color: #ffff99;
-  --fs-size: 2em;
+  --fs-size: 50px;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
+  font-family: URW Chancery L;
   position: relative;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -274,13 +253,267 @@ a:hover, a:active{
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 .actual-text
 {
+	
 	color:rgba(255, 255, 26,0.6);
 
+}.lien {
+	
+	
+  
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #ffff99;
+  --fs-size: 20px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-lien {
+
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.lien:hover .hover-lien {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+.lien-text
+{
+	color:rgba(255, 255, 26,0.6);
+
+}
+#background-video {
+  width: 33%;
+  opacity:50%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}#background-video2 {
+  width: 35%;
+  opacity:50%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 66%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}#background-video3 {
+  width: 33%;
+  opacity:50%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 33%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+/*fin de page*/
+
+
+
+footer{
+	height:250px;
+	background-color:black;
+	opacity:0.8;
+	 width:100%;
+    position: absolute;
+	left:0;
+  
+}
+
+
+ul {
+  list-style: none;
+  
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+  left: -50px;
+  top:50px;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+   --animation-color: #ffff99;
+  transform: translateX(-50%);
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  font-style: bold;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px var(--animation-color));
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   --animation-color: #ffff99;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #000;
+  background-color: rgba(255, 255, 126,0.6);
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+   transform: translateY(0%);
+    filter: drop-shadow(0 0 10px var(--animation-color));
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+	top:0px;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a .filled {
+  background-color: #FFFF99;
+}
+
+.example-2 .icon-content a ~ .tooltip {
+  background-color:#FFFF99;
+}
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.tg{
+	width:100%;
+	margin-up:;
+	margin:250px 50px 50px 50px;
+	
+}
+.tg th{
+	padding-bottom : 250px;
 }
