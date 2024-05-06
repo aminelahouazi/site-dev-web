@@ -3,6 +3,7 @@ let left = true;
 let middle = false;
 let right = false;
 
+
 function getAp() {
     if (!left) {
         document.getElementById("left").classList.remove('outl');
@@ -50,3 +51,14 @@ function getEvnmt() {
         right = true;
     }
 }
+
+function getcont() {
+   
+        document.getElementById("cover").classList.add('open1');
+        document.getElementById("cover2").classList.add('open2');
+        document.getElementById("bcontact").classList.add('buttonfade');
+      
+        
+     
+}
+

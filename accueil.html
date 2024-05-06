@@ -4,73 +4,92 @@
 <head>
     <meta charset="utf-8" />
   <link rel="stylesheet" href="site2.css">
-    <title></title>
-</head>
-<body>
-<script src="site.js"></script>
-<nav class="topnav">
-<button class="button" data-text="Awesome">
-    <span class="actual-text">La&nbsp;Table&nbsp;Des&nbsp;Délices</span>
-    <span aria-hidden="true" class="hover-text">La&nbsp;Table&nbsp;Des&nbsp;Délices</span>
-</button>
 
- </nav>
- <nav class="subnav">
- <a class="lien" data-text="Awesome" href="menu.html">
+    <title>La Table Des Délices</title>
+     <link rel="icon" type="image/x-icon" href="itab.png">
+</head>
+
+<header>
+<ul class="topnav">
+<li>
+<div class="shine">LA TABLE &nbsp;&nbsp;DES &nbsp; DÉLICES</div>
+</li>
+ </ul>
+<ul class="subnav">
+ <li><a class="lien" data-text="Awesome" href="menu.html">
     <span class="lien-text">menu</span>
     <span aria-hidden="true" class="hover-lien">menu</span>
-</a>
-<a class="lien" data-text="Awesome" href="accueil.html">
+</a> </li>
+ <li><a class="lien" data-text="Awesome" href="accueil.html">
     <span class="lien-text">accueil</span>
     <span aria-hidden="true" class="hover-lien">accueil</span>
-</a>
-<a class="lien" data-text="Awesome" href="contact.html">
+</a> </li>
+ <li><a class="lien" data-text="Awesome" href="contact.html">
     <span class="lien-text">contact</span>
     <span aria-hidden="true" class="hover-lien">contact</span>
-</a>
+</a> </li>
   
- </nav>
-<nav class="vert">
+ </ul>
+<ul class="vert">
 
-    <button onclick="getAp()">À propos</button>
-    <button onclick="getSpec()">Spécialités</button>
-    <button onclick="getEvnmt()">Évènements</button>
- </nav>
+   <li> <button onclick="getAp()" data-text="Awesome" class="button"> 
+    <span class="actual-text">À&nbsp;propos</span>
+    <span aria-hidden="true" class="hover-text">À&nbsp;propos</span>
+    </button></li>
+   <li> <button onclick="getSpec()" data-text="Awesome" class="button">
+    <span class="actual-text">Spécialités</span>
+    <span aria-hidden="true" class="hover-text">Spécialités</span>
+    </button></li>
+    <li><button onclick="getEvnmt()" data-text="Awesome" class="button">
+    <span class="actual-text">Évènements</span>
+    <span aria-hidden="true" class="hover-text">Évènements</span>
+    </button></li>
+ </ul>
+ </header>
+<body>
 
+<script src="site.js"></script>
 
-<table class="table2">
+<table id="table2">
+<h2 id="Bienv">Bienvenue à La Table des Délices</h2>
 <tr>
 
 <td id="left">
-<h2>À propos</h2>
+
 
 <ul id="pr">
-                    <li>Histoire:Le Restaurant Parisien a ete fonde en 2015 par Pierre et Marie , des amis passionnede cuisine francaise.<br>Depuis son ouverture ,le restaurant a devenu un lieu incontournable pour les amatteursde gastronomie a Paris.</li>
-                    <li>Emplacement:situe dans le quartier historique de Marais il offre une atmosphere chaleureuse et authantique.</li>
-                    <li>Ambiance:Le restaurant Parisien seduit par son decor elegant ,avec des murs en pierre des lustres etincekants</li>
-                    <li>Engagements:nous nous angageons a proposer une cuisine de qualite elaborer a partir de produit frais et locaux</li>
-                    
+ <li> <h2>À propos</h2></li>
+             <p style="text-indent: 50px;">
+   
+    Bienvenue à La Table des Délices, un joyau de la gastronomie française niché au cœur de la ville. Notre restaurant est un véritable sanctuaire pour les amateurs de cuisine raffinée et les explorateurs de saveurs authentiques.
+    <br><br>
+    À La Table des Délices, chaque plat est conçu avec passion et créativité, mettant en valeur les ingrédients les plus frais et les techniques culinaires les plus fines. Que vous soyez un habitué ou un visiteur occasionnel, chaque repas chez nous est une expérience culinaire inoubliable.
+    <br><br>
+    Nous sommes fiers de perpétuer la tradition de la cuisine française, tout en y apportant notre touche personnelle et contemporaine. Notre équipe de chefs talentueux s'efforce constamment de vous offrir des plats exquis, alliant tradition et innovation.
+    <br><br>
+    Que ce soit pour une soirée romantique, un repas d'affaires ou une célébration spéciale, La Table des Délices est l'endroit idéal pour savourer les délices de la cuisine française dans une ambiance élégante et chaleureuse.
+</p> 
                </ul></td>
 
 <td id="middle">
-<h2>Spécialités</h2>
+
  <ul id="sp">
-                    <li>Cuisine Francaise Classique:Notre menu propose une selection des plats francais,comme le cassoulet maison et la creme brulee a la vanille</li>
-                    <li>spicialities Parisiennes:decouvrere nos spicialities Parisiennes ,telles que les escargots de Bourgogne,la soupe a l'oignon gratinee.</li>
-                    <li>Fusion Culinaire:notre chef cree des plats innovants en melant les saveurs francaises a des influences internationales. </li>
-                    <li>Option Vegetariennes:nous proposons egalement des options vegetariennes et veganes savoureuses,comme le risottoaux champignons</li>
+                   <li> <h2>Spécialités</h2></li>
+                    <li><strong>Cuisine Française Classique :</strong> Plongez dans l'authenticité avec notre sélection de plats français, tels que le cassoulet maison et la crème brûlée à la vanille.</li>
+    <li><strong>Spécialités Parisiennes :</strong> Laissez-vous séduire par nos spécialités parisiennes, telles que les escargots de Bourgogne et la soupe à l'oignon gratinée.</li>
+    <li><strong>Fusion Culinaire :</strong> Explorez les créations innovantes de notre chef, alliant les saveurs françaises à des influences internationales.</li>
+    <li><strong>Options Végétariennes :</strong> Pour nos amis végétariens et véganes, nous proposons des options savoureuses telles que le risotto aux champignons.</li>
                 
             </ul>
             </td>
 
 <td id="right">
-<h2>Évènements</h2>
-<ul id="ev">
-                    <li>Soirees a themes :Rejoignez-nous pour nos soirees a theme mensuelles ,avec des degustation de vins ,des concerts de musique live.</li>
-                    <li>Cours de cuisines :Participez a nos cours de cuisine animes par notre chef,ou vous apprendrez a preparer des plats francais classiques et des recettes innovantes</li>
-                    <li>Brunchs Spiciaux:Ne manquez pas nos brunchs Spiciaux dimanche,avec un buffet gourmand comprenant des viennoiseries fraiches ,des plats chauds</li>
-                    <li>Evenements saisonniers:tout au long de l'annee ,nous organisons des evenements Spiciaux pour celebrer les fetes saisonnieres<br>comme les paques ,et la féte de noel avec des menus dedies </li>
-                
+
+<ul id="ev"> <li> <h2>Évènements</h2></li>
+                      <li><strong>Soirées à thèmes :</strong> Rejoignez-nous pour nos soirées à thème mensuelles, avec des dégustations de vins et des concerts de musique live.</li>
+    <li><strong>Cours de cuisine :</strong> Participez à nos cours de cuisine animés par notre chef, où vous apprendrez à préparer des plats français classiques et des recettes innovantes.</li>
+    <li><strong>Brunchs Spéciaux :</strong> Ne manquez pas nos brunchs spéciaux du dimanche, avec un buffet gourmand comprenant des viennoiseries fraîches et des plats chauds.</li>
+    <li><strong>Événements saisonniers :</strong> Tout au long de l'année, nous organisons des événements spéciaux pour célébrer les fêtes saisonnières comme Pâques et la fête de Noël, avec des menus dédiés.</li>
              </ul></td>
 </tr>
 
@@ -79,23 +98,23 @@
 
 
 
-<video id="background-video" autoplay loop muted>
-  <source src="rest.mp4" type="video/mp4">
-</video>
-<video id="background-video2" autoplay loop muted>
-  <source src="rest2.mp4" type="video/mp4">
-</video>
+
 <video id="background-video3" autoplay loop muted>
   <source src="rest3.mp4" type="video/mp4">
 </video>
 
-<footer class="f1">
+
+
+</body>
+
+
+<footer id="fcont" >
 <ul class="example-2">
   <li class="icon-content">
     <a
-      data-social="spotify"
-      aria-label="Spotify"
-      href="https://www.spotify.com/"
+      data-social="Contact"
+      aria-label="Contact"
+      href="contact.html"
     >
       <div class="filled"></div>
       <svg viewBox="-9 -5 136.88 136.27" version="1.1">
@@ -105,13 +124,13 @@
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Spotify</div>
+    <div class="tooltip">Contact</div>
   </li>
   <li class="icon-content">
     <a
-      data-social="pinterest"
-      aria-label="Pinterest"
-      href="https://www.pinterest.com/"
+      data-social="youtube"
+      aria-label="youtube"
+      href="https://www.youtube.com/"
     >
       <div class="filled"></div>
       <svg xml:space="preserve" viewBox="0 0 16 16" version="1.1">
@@ -121,12 +140,12 @@
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Pinterest</div>
+    <div class="tooltip">Youtube</div>
   </li>
   <li class="icon-content">
     <a
-      data-social="dribbble"
-      aria-label="Dribbble"
+      data-social="facebook"
+      aria-label="facebook"
       href="https://dribbble.com/"
     >
       <div class="filled"></div>
@@ -137,13 +156,13 @@
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Dribbble</div>
+    <div class="tooltip">Facebook</div>
   </li>
   <li class="icon-content">
     <a
-      data-social="telegram"
-      aria-label="Telegram"
-      href="https://telegram.org/"
+      data-social="instagram"
+      aria-label="instagram"
+      href="https://www.instagram.com/amine_lahouazi/"
     >
       <div class="filled"></div>
       <svg viewBox="-0.4 0 17 17" version="1.1">
@@ -153,10 +172,15 @@
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Telegram</div>
+    <div class="tooltip">Instagram</div>
   </li>
 </ul>
+
+    <p>Restaurant Table Des Délices.<br>
+ tous droit reserves<br>
+ &copy;2024</p>
+  
+
 </footer>
 
-</body>
 </html>
