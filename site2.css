@@ -930,7 +930,8 @@ height:290px;
 	background-size: cover;
   width: 50%;
   height: 100%;
-  border-radius: 10px;
+ border-top-left-radius: 100px 100px;
+border-bottom-left-radius: 100px 100px;
   
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -951,6 +952,8 @@ height:290px;
 }
 #cover2 {
   opacity:0.9;
+  border-top-right-radius: 100px 100px;
+  border-bottom-right-radius: 100px 100px;
 
   top: 0;
   right: 0;
@@ -961,7 +964,7 @@ height:290px;
 	background-size: cover;
   width: 50%;
   height: 100%;
-  border-radius: 10px;
+ 
   
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1035,10 +1038,15 @@ opacity:0;
 
 .contact-form label {
   color: ;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .contact-form .heading {
-  font-size: 24px;
+  font-size: 30px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   color: #C2C37D;
   margin-bottom: 12px;
   font-weight: bold;
@@ -1082,9 +1090,11 @@ textarea {
   background-color:  #BEBE6B;
   color: Black;
   border: none;
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 }
 
